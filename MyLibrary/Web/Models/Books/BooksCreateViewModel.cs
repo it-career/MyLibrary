@@ -21,7 +21,7 @@ namespace Web.Models.Books
         public string ISBN { get; set; }
 
         [Required]
-        [Range(1, int.MaxValue, ErrorMessage = "Negative values are not accepted")]
+        [Range(1, int.MaxValue, ErrorMessage = "Negative values or 0 are not accepted")]
         public int Pages { get; set; }
     }
 }
